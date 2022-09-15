@@ -4,7 +4,7 @@ E-Commerce Back End - ORM (Object Relational Mapping)
 
 ## Description
 
-This is an E-commerce Back End only (no front end) using ORM (Object Relational Mapping). The routes are tested using Insomnia since there is no front end. You can create a category, view all categories, view a single category, update a category and delete a category. The same goes for the tags and products as well. Check out the screenshots and link to demo of the app below!
+This is an E-commerce Back End only (no front end) using ORM (Object Relational Mapping). For backend it is using NodeJS, DotEnv, Express, MySQL2, and Sequelize. The routes are tested using Insomnia since there is no front end. You can create a category, view all categories, view a single category, update a category and delete a category. The same goes for the tags and products as well, and the changes will saved to the SQL database. Check out the screenshots and link to demo of the app below!
 
 ## Screenshot(s)
 
