@@ -15,9 +15,13 @@ router.get("/", (req, res) => {
         ProductTag,
       },
     ],
-  }).then((productData) => {
-    res.json(productData);
-  });
+  })
+    .then((productData) => {
+      // response .json that was requested
+      res.json(productData);
+    })
+    // Catches any errors
+    .catch((err) => res.json(err));
 });
 
 // get one product
@@ -32,9 +36,13 @@ router.get("/:id", (req, res) => {
         ProductTag,
       },
     ],
-  }).then((productData) => {
-    res.json(productData);
-  });
+  })
+    .then((productData) => {
+      // Returns the response .json from the server
+      res.json(productData);
+    })
+    // Catches any errors
+    .catch((err) => res.json(err));
 });
 
 // create new product
@@ -111,6 +119,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
+// Delete route for products
 router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
@@ -119,9 +128,11 @@ router.delete("/:id", (req, res) => {
     },
   })
     .then((deletedProduct) => {
-      res.json("This category has been deleted");
+      // Returns the response .json from back end
+      res.json(deletedProduct);
     })
+    // Catches any errors
     .catch((err) => res.json(err));
 });
-
+// Exports routes
 module.exports = router;

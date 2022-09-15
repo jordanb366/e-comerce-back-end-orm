@@ -1,18 +1,21 @@
 const { Model, DataTypes } = require("sequelize");
-
+// Imports model and sequelize
 const sequelize = require("../config/connection");
 
 class ProductTag extends Model {}
 
+// Product Tag
 ProductTag.init(
   {
     // define columns
+    // Id column
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
+    // Product id column
     product_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -22,6 +25,7 @@ ProductTag.init(
         unique: false,
       },
     },
+    // Tag id column
     tag_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -41,4 +45,5 @@ ProductTag.init(
   }
 );
 
+// Exports product tag model
 module.exports = ProductTag;
