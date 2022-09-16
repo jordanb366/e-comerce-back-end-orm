@@ -9,7 +9,7 @@ This is an E-commerce Back End only (no front end) using ORM (Object Relational 
 ## Screenshot(s)
 
 ![Screenshot 1](./docs/Assets/Screenshot1.png)
-![Screenshot 2](./docs/Assets/Screenshot1.png)
+![Screenshot 2](./docs/Assets/Screenshot2.png)
 
 ## Link to Demo of App
 
